@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* styling for hover effect on navbar */
+.nav-pills li a:hover{
+    background-color: #157347;
+}
+
+/* styling to give the black navbar a very long height on small screen */
+.berry{
+    height: 500vh;
+}

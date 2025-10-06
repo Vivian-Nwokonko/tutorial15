@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="../CSS/index6.css">
+    <title>HMS fiNal</title>
+</head>
+
+<body>
+
+    <!-- start of labcomp6 page -->
+    <div class="container-fluid d-flex   p-0 berry">
+        <!-- <div class="row flex-nowrap"> -->
+
+        <!-- start of general navbar -->
+        <div class="bg-dark  col-md-4 col-lg-3 p-4 d-flex flex-column flex-shrink-0 justify-content">
+            <div class="bg-dark p-2">
+                <a class="d-flex text-decoration-none align-items-center text-white mt-1"><i
+                        class="fs-5 fa-regular fa-hospital"></i>
+                    <h3 class="ms-3"><span class="text-success">Alice</span> Memorial</h3>
+                </a>
+                <ul class="nav nav-pills flex-column mt-4" id="menu">
+                    <li class="nav-item py-2 py-sm-0">
+                        <a href="index6.html" class="nav-link text-white">
+                            <i class="fs-5 fs-5 fa fa-house"></i><span class="fs-4 ms-3 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 py-sm-0">
+                        <a href="patientt6.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-users"></i><span class="fs-4 ms-3 d-none d-sm-inline">Patient</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  py-2 py-sm-0">
+                        <a href="doctor6.html" class="nav-link text-white">
+                            <i class="fs-5 fa-solid fa-user-doctor"></i><span
+                                class="fs-4 ms-3 d-none d-sm-inline">Doctor</span>
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 py-sm-0">
+                        <a href="opd6.html" class="nav-link  text-white">
+                            <i class="fs-5 fa-solid fa-person-walking"></i><span
+                                class="fs-4 ms-3 d-none d-sm-inline">OPD</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item py-2 py-sm-0 mask">
+                        <a href="ipd6.html" class="nav-link text-white">
+                            <i class="fs-5 fa-solid fa-bed-pulse"></i><span
+                                class="fs-4 ms-3 d-none d-sm-inline">IPD</span>
+                        </a>
+                    </li>
+
+                    <!-- start of navbar with dropdown arrow -->
+                    <li class="nav-item py-2 py-sm-0 disabled">
+                        <a href="#sidemenu" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                            <i class="fa-solid fa-prescription"></i>
+                            <span class="fs-4 ms-3 d-none d-sm-inline">Pharmacy</span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="nav collapse ms-1 flex-column" id="sidemenu" data-bs-parent="#menu">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="pharmreq6.html" aria-current="page"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Requests</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="pharmcop6.html"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Completed</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="pharmnewreq6.html"> <i
+                                        class="fa-solid fa-plus"></i> <span class="ms-3">New Request</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="pharmdisp6.html"> <i
+                                        class="fa-solid fa-hand-holding-hand"></i> <span class="ms-3">Dispense</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="pharmreturn6.html"> <i
+                                        class="fa-solid fa-arrow-rotate-left"></i><span class="ms-3">Return
+                                        Medication</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item py-2 py-sm-0 disabled">
+                        <a href="#sidemenub" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                            <i class="fa fa-microscope"></i>
+                            <span class="fs-4 ms-3 d-none d-sm-inline">Labs</span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="nav collapse ms-1 flex-column" id="sidemenub" data-bs-parent="#menub">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="labreq6.html" aria-current="page"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Requests</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="labcomp6.html"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Completed</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="labnewreq6.html"> <i class="fa-solid fa-plus"></i>
+                                    <span class="ms-3">New Request</span> </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item py-2 py-sm-0 disabled">
+                        <a href="#sidemenuc" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                            <i class="fa-solid fa-x-ray"></i>
+                            <span class="fs-4 ms-3 d-none d-sm-inline">Imaging</span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="nav collapse ms-1 flex-column" id="sidemenuc" data-bs-parent="#menuc">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="imagreq6.html" aria-current="page"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Requests</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="imagcomp6.html"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Completed</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="imagnewreq6.html"> <i class="fa-solid fa-plus"></i>
+                                    <span class="ms-3">New Request</span> </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item py-2 py-sm-0 disabled">
+                        <a href="#sidemenud" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                            <i class="fa fa-clipboard"></i>
+                            <span class="fs-4 ms-3 d-none d-sm-inline">Billing</span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="nav collapse ms-1 flex-column" id="sidemenud" data-bs-parent="#menud">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="billinvoice6.html" aria-current="page"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Invoices</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="billnewinvoice6.html"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">New Invoice</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="billprice6.html"> <i class="fa-solid fa-plus"></i>
+                                    <span class="ms-3">Price</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="billpricprof6.html"> <i
+                                        class="fa-solid fa-plus"></i> <span class="ms-3">Price Profiles</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="billcashier6.html"> <i
+                                        class="fa-solid fa-plus"></i> <span class="ms-3">Cashier</span> </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item py-2 py-sm-0 disabled">
+                        <a href="#sidemenug" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                            <i class="fa fa-table"></i>
+                            <span class="fs-4 ms-3 d-none d-sm-inline">Inventory</span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="nav collapse ms-1 flex-column" id="sidemenug" data-bs-parent="#menug">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="inventreq6.html" aria-current="page"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Requests</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="inventitem6.html"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Items</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="inventrec6.html"> <i class="fa-solid fa-plus"></i>
+                                    <span class="ms-3">Inventory Received</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="inventrep6.html"> <i
+                                        class="fa-solid fa-plus"></i> <span class="ms-3">Reports</span> </a>
+                            </li>
+                           </ul>
+                    </li>
+
+                    <li class="nav-item py-2 py-sm-0 disabled">
+                        <a href="#sidemenue" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                            <i class="fa fa-table"></i>
+                            <span class="fs-4 ms-3 d-none d-sm-inline">Scheduling</span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="nav collapse ms-1 flex-column" id="sidemenue" data-bs-parent="#menue">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="schedappoint6.html" aria-current="page"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Appointment This
+                                        Week</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="schedtodappoint6.html"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Today's
+                                        Appointments</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="schedappointsear6.html"> <i
+                                        class="fa-solid fa-plus"></i> <span class="ms-3">Appointments Search</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="schedappointcal6.html"> <i
+                                        class="fa-regular fa-calendar-days"></i> <span class="ms-3">Appointments
+                                        Calendar</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="schedaddappiont6.html"> <i
+                                        class="fa-solid fa-plus"></i><span class="ms-3">Add Appointment
+                                        Medication</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="schedthaeater6.html"> <i
+                                        class="fa-solid fa-plus"></i><span class="ms-3">Theater Schedule</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="schedsurgery6.html"> <i
+                                        class="fa-regular fa-calendar-days"></i><span class="ms-3">Schedule
+                                        Surgery</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item py-2 py-sm-0 disabled">
+                        <a href="#sidemenuf" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="fs-4 ms-3 d-none d-sm-inline">Administration</span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="nav collapse ms-1 flex-column" id="sidemenuf" data-bs-parent="#menuf">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="user6.html" aria-current="page"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Users</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="newuser6.html"> <i
+                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">New User</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="userrole6.html"> <i
+                                        class="fa-solid fa-plus"></i> <span class="ms-3">User Roles</span> </a>
+                            </li>
+                   
+
+                        </ul>
+                    </li>
+                    <!-- end of  navbar with dropdown arrow -->
+
+
+                </ul>
+
+            </div>
+        </div>
+        <!-- end of general navbar -->
+
+
+        <!-- start of content area -->
+
+        <div class="p-4 container">
+            <h3 class="pt-1">Completed Labs</h3>
+            <p class="pt-3">No completed items found.</p>
+
+        </div>
+        <!-- end of content area -->
+        <!-- </div> -->
+    </div>
+
+    <!-- end of labcomp6 page -->
+
+
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+    <!-- script line for dropdown arrow in navabar. it controls the modal effect as well -->
+</body>
+
+</html>
