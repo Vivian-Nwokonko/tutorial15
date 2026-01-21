@@ -12,719 +12,394 @@
 
 <body>
 
-    <!-- start of userrole6 page -->
-    <div class="container-fluid d-flex   p-0 berry">
-        <!-- <div class="row flex-nowrap"> -->
+    <!-- MOBILE TOGGLE BUTTON -->
+    <button class="btn btn-dark mobile-toggle position-fixed top-0 start-0 m-2" id="mobile-toggle">
+        <i class="fa fa-bars"></i>
+    </button>
 
-        <!-- start of general navbar -->
-        <div class="bg-dark  col-md-4 col-lg-3 p-4 d-flex flex-column flex-shrink-0 justify-content">
-            <div class="bg-dark p-2">
-                <a class="d-flex text-decoration-none align-items-center text-white mt-1"><i
-                        class="fs-5 fa-regular fa-hospital"></i>
-                    <h3 class="ms-3"><span class="text-success">Alice</span> Memorial </h3>
+    <!-- SIDEBAR -->
+
+    <div class="sidebar p-3" id="sidebar">
+        <!-- CLOSE BUTTON for mobile -->
+        <button class="btn btn-danger d-lg-none mb-3 w-100" id="sidebar-close">
+            <i class="fa fa-xmark"></i> Close
+        </button>
+
+        <div class="text-center mb-4">
+            <i class="fa-regular fa-hospital fa-2x"></i>
+            <h5 class="mt-2"><span class="text-success">Alice</span> Memorial</h5>
+        </div>
+
+
+        <ul class="nav flex-column" id="menu">
+            <!-- Simple links -->
+            <li class="nav-item">
+                <a href="index.html" class="nav-link text-white"><i class="fa fa-house me-2"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="patientt6.html" class="nav-link text-white"><i class="fa fa-users me-2"></i> Patient</a>
+            </li>
+            <li class="nav-item">
+                <a href="doctor6.html" class="nav-link text-white"><i class="fa fa-user-doctor me-2"></i> Doctor</a>
+            </li>
+            <li class="nav-item">
+                <a href="opd6.html" class="nav-link text-white"><i class="fa fa-person-walking me-2"></i> OPD</a>
+            </li>
+            <li class="nav-item">
+                <a href="ipd6.html" class="nav-link text-white"><i class="fa fa-bed-pulse me-2"></i> IPD</a>
+            </li>
+
+            <!-- DROPDOWNS -->
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" href="#pharmacy" role="button" aria-expanded="false">
+                    <span><i class="fa fa-prescription me-2"></i> Pharmacy</span>
+                    <i class="fa fa-chevron-down"></i>
                 </a>
-                <ul class="nav nav-pills flex-column mt-4" id="menu">
-                    <li class="nav-item py-2 py-sm-0">
-                        <a href="index6.html" class="nav-link text-white">
-                            <i class="fs-5 fs-5 fa fa-house"></i><span class="fs-4 ms-3 d-none d-sm-inline">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item py-2 py-sm-0">
-                        <a href="patientt6.html" class="nav-link text-white">
-                            <i class="fs-5 fa fa-users"></i><span class="fs-4 ms-3 d-none d-sm-inline">Patient</span>
-                        </a>
-                    </li>
-                    <li class="nav-item  py-2 py-sm-0">
-                        <a href="doctor6.html" class="nav-link text-white">
-                            <i class="fs-5 fa-solid fa-user-doctor"></i><span
-                                class="fs-4 ms-3 d-none d-sm-inline">Doctor</span>
-                        </a>
-                    </li>
-                    <li class="nav-item py-2 py-sm-0">
-                        <a href="opd6.html" class="nav-link  text-white">
-                            <i class="fs-5 fa-solid fa-person-walking"></i><span
-                                class="fs-4 ms-3 d-none d-sm-inline">OPD</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item py-2 py-sm-0 mask">
-                        <a href="ipd6.html" class="nav-link text-white">
-                            <i class="fs-5 fa-solid fa-bed-pulse"></i><span
-                                class="fs-4 ms-3 d-none d-sm-inline">IPD</span>
-                        </a>
-                    </li>
-
-                    <!-- start of navbar with drop down arrow -->
-                    <li class="nav-item py-2 py-sm-0 disabled">
-                        <a href="#sidemenu" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
-                            <i class="fa-solid fa-prescription"></i>
-                            <span class="fs-4 ms-3 d-none d-sm-inline">Pharmacy</span>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="nav collapse ms-1 flex-column" id="sidemenu" data-bs-parent="#menu">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="pharmreq6.html" aria-current="page"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Requests</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="pharmcop6.html"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Completed</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="pharmnewreq6.html"> <i
-                                        class="fa-solid fa-plus"></i> <span class="ms-3">New Request</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="pharmdisp6.html"> <i
-                                        class="fa-solid fa-hand-holding-hand"></i> <span class="ms-3">Dispense</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="pharmreturn6.html"> <i
-                                        class="fa-solid fa-arrow-rotate-left"></i><span class="ms-3">Return
-                                        Medication</span></a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item py-2 py-sm-0 disabled">
-                        <a href="#sidemenub" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
-                            <i class="fa fa-microscope"></i>
-                            <span class="fs-4 ms-3 d-none d-sm-inline">Labs</span>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="nav collapse ms-1 flex-column" id="sidemenub" data-bs-parent="#menub">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="labreq6.html" aria-current="page"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Requests</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="labcomp6.html"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Completed</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="labnewreq6.html"> <i class="fa-solid fa-plus"></i>
-                                    <span class="ms-3">New Request</span> </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item py-2 py-sm-0 disabled">
-                        <a href="#sidemenuc" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
-                            <i class="fa-solid fa-x-ray"></i>
-                            <span class="fs-4 ms-3 d-none d-sm-inline">Imaging</span>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="nav collapse ms-1 flex-column" id="sidemenuc" data-bs-parent="#menuc">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="imagreq6.html" aria-current="page"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Requests</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="imagcomp6.html"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Completed</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="imagnewreq6.html"> <i class="fa-solid fa-plus"></i>
-                                    <span class="ms-3">New Request</span> </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item py-2 py-sm-0 disabled">
-                        <a href="#sidemenud" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
-                            <i class="fa fa-clipboard"></i>
-                            <span class="fs-4 ms-3 d-none d-sm-inline">Billing</span>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="nav collapse ms-1 flex-column" id="sidemenud" data-bs-parent="#menud">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="billinvoice6.html" aria-current="page"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Invoices</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="billnewinvoice6.html"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">New Invoice</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="billprice6.html"> <i class="fa-solid fa-plus"></i>
-                                    <span class="ms-3">Price</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="billpricprof6.html"> <i
-                                        class="fa-solid fa-plus"></i> <span class="ms-3">Price Profiles</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="billcashier6.html"> <i
-                                        class="fa-solid fa-plus"></i> <span class="ms-3">Cashier</span> </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item py-2 py-sm-0 disabled">
-                        <a href="#sidemenug" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
-                            <i class="fa fa-table"></i>
-                            <span class="fs-4 ms-3 d-none d-sm-inline">Inventory</span>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="nav collapse ms-1 flex-column" id="sidemenug" data-bs-parent="#menug">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="inventreq6.html" aria-current="page"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Requests</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="inventitem6.html"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Items</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="inventrec6.html"> <i class="fa-solid fa-plus"></i>
-                                    <span class="ms-3">Inventory Received</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="inventrep6.html"> <i
-                                        class="fa-solid fa-plus"></i> <span class="ms-3">Reports</span> </a>
-                            </li>
-                           </ul>
-                    </li>
-
-                    <li class="nav-item py-2 py-sm-0 disabled">
-                        <a href="#sidemenue" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
-                            <i class="fa fa-table"></i>
-                            <span class="fs-4 ms-3 d-none d-sm-inline">Scheduling</span>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="nav collapse ms-1 flex-column" id="sidemenue" data-bs-parent="#menue">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="schedappoint6.html" aria-current="page"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Appointment This
-                                        Week</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="schedtodappoint6.html"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">Today's
-                                        Appointments</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="schedappointsear6.html"> <i
-                                        class="fa-solid fa-plus"></i> <span class="ms-3">Appointments Search</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="schedappointcal6.html"> <i
-                                        class="fa-regular fa-calendar-days"></i> <span class="ms-3">Appointments
-                                        Calendar</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="schedaddappiont6.html"> <i
-                                        class="fa-solid fa-plus"></i><span class="ms-3">Add Appointment
-                                        Medication</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="schedthaeater6.html"> <i
-                                        class="fa-solid fa-plus"></i><span class="ms-3">Theater Schedule</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="schedsurgery6.html"> <i
-                                        class="fa-regular fa-calendar-days"></i><span class="ms-3">Schedule
-                                        Surgery</span></a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-
-                    <li class="nav-item py-2 py-sm-0 disabled">
-                        <a href="#sidemenuf" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
-                            <i class="fa-solid fa-user"></i>
-                            <span class="fs-4 ms-3 d-none d-sm-inline">Administration</span>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="nav collapse ms-1 flex-column" id="sidemenuf" data-bs-parent="#menuf">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="user6.html" aria-current="page"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3"> Users</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="newuser6.html"> <i
-                                        class="fa-solid fa-angle-down"></i> <span class="ms-3">New User</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="userrole6.html"> <i class="fa-solid fa-plus"></i>
-                                    <span class="ms-3">User Roles</span> </a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                    <!-- end of navbar with dropdown arrow -->
+                <ul class="collapse nav flex-column ms-3" id="pharmacy" data-bs-parent="#menu">
+                    <li><a href="pharmreq6.html" class="nav-link text-white">Requests</a></li>
+                    <li><a href="pharmcop6.html" class="nav-link text-white">Completed</a></li>
+                    <li><a href="pharmnewreq6.html" class="nav-link text-white">New Request</a></li>
+                    <li><a href="pharmdisp6.html" class="nav-link text-white">Dispense</a></li>
+                    <li><a href="pharmreturn6.html" class="nav-link text-white">Return Medication</a></li>
                 </ul>
+            </li>
 
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" href="#labs" role="button" aria-expanded="false">
+                    <span><i class="fa fa-microscope me-2"></i> Labs</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="collapse nav flex-column ms-3" id="labs" data-bs-parent="#menu">
+                    <li><a href="labreq6.html" class="nav-link text-white">Requests</a></li>
+                    <li><a href="labcomp6.html" class="nav-link text-white">Completed</a></li>
+                    <li><a href="labnewreq6.html" class="nav-link text-white">New Request</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" href="#imaging" role="button" aria-expanded="false">
+                    <span><i class="fa fa-x-ray me-2"></i> Imaging</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="collapse nav flex-column ms-3" id="imaging" data-bs-parent="#menu">
+                    <li><a href="imagreq6.html" class="nav-link text-white">Requests</a></li>
+                    <li><a href="imagcomp6.html" class="nav-link text-white">Completed</a></li>
+                    <li><a href="imagnewreq6.html" class="nav-link text-white">New Request</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" href="#billing" role="button" aria-expanded="false">
+                    <span><i class="fa fa-clipboard me-2"></i> Billing</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="collapse nav flex-column ms-3" id="billing" data-bs-parent="#menu">
+                    <li><a href="billinvoice6.html" class="nav-link text-white">Invoices</a></li>
+                    <li><a href="billnewinvoice6.html" class="nav-link text-white">New Invoice</a></li>
+                    <li><a href="billprice6.html" class="nav-link text-white">Price</a></li>
+                    <li><a href="billpricprof6.html" class="nav-link text-white">Price Profiles</a></li>
+                    <li><a href="billcashier6.html" class="nav-link text-white">Cashier</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" href="#inventory" role="button" aria-expanded="false">
+                    <span><i class="fa fa-table me-2"></i> Inventory</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="collapse nav flex-column ms-3" id="inventory" data-bs-parent="#menu">
+                    <li><a href="inventreq6.html" class="nav-link text-white">Requests</a></li>
+                    <li><a href="inventitem6.html" class="nav-link text-white">Items</a></li>
+                    <li><a href="inventrec6.html" class="nav-link text-white">Inventory Received</a></li>
+                    <li><a href="inventrep6.html" class="nav-link text-white">Reports</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" href="#scheduling" role="button" aria-expanded="false">
+                    <span><i class="fa fa-calendar me-2"></i> Scheduling</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="collapse nav flex-column ms-3" id="scheduling" data-bs-parent="#menu">
+                    <li><a href="schedappoint6.html" class="nav-link text-white">Appointment This Week</a></li>
+                    <li><a href="schedtodappoint6.html" class="nav-link text-white">Today's Appointments</a></li>
+                    <li><a href="schedappointsear6.html" class="nav-link text-white">Appointments Search</a></li>
+                    <li><a href="schedappointcal6.html" class="nav-link text-white">Appointments Calendar</a></li>
+                    <li><a href="schedaddappiont6.html" class="nav-link text-white">Add Appointment</a></li>
+                    <li><a href="schedthaeater6.html" class="nav-link text-white">Theater Schedule</a></li>
+                    <li><a href="schedsurgery6.html" class="nav-link text-white">Schedule Surgery</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" href="#admin" role="button" aria-expanded="false">
+                    <span><i class="fa fa-user-shield me-2"></i> Administration</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="collapse nav flex-column ms-3" id="admin" data-bs-parent="#menu">
+                    <li><a href="user6.html" class="nav-link text-white">Users</a></li>
+                    <li><a href="newuser6.html" class="nav-link text-white">New User</a></li>
+                    <li><a href="userrole6.html" class="nav-link text-white">User Roles</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- END OF SIDEBAR -->
+
+    
+    <!-- start of main content -->
+    <div class="main-content container p-4">
+
+        <h3 class="pt-1 mb-4">User Roles</h3>
+
+        <!-- start of form -->
+        <form action="" class="p-4">
+
+            <!-- Role selection -->
+            <div class="mb-4">
+                <label for="role">Role</label>
+                <select name="role" id="role" class="form-control">
+                    <option value="">Data Entry</option>
+                    <option>Doctor</option>
+                    <option>Finance</option>
+                    <option>Finance Manager</option>
+                    <option>Hospital Administrator</option>
+                    <option>Inventory Manager</option>
+                    <option>Imaging Technician</option>
+                    <option>Lab Technician</option>
+                    <option>Medical Records Officer</option>
+                    <option>Nurse</option>
+                    <option>Nurse Manager</option>
+                    <option>Patient Administration</option>
+                    <option>Pharmacist</option>
+                    <option>Social Worker</option>
+                    <option>System Administrator</option>
+                    <option>User Administrator</option>
+                    <option>Cashier</option>
+                </select>
             </div>
-        </div>
-        <!-- end of GENERAL navbar -->
 
+            <!-- Permissions sections -->
+            <div class="row">
 
-        <!-- start of content area -->
-
-        <div class="p-4 container">
-
-            <h3 class="pt-1">User Roles</h3>
-
-            <!-- start of form -->
-            <form action="" class="container p-4">
-                <div class="row ">
-
-                    <div class="col-sm-12 mb-4">
-                        <label for="">Role</label>
-                        <select name="gender" id="gender" class="form-control">
-                            <option value="">Data Entry</option>
-                            <option value="Male">Doctor</option>
-                            <option value="Remale">Finance</option>
-                            <option value="Remale">Finance Manager</option>
-                            <option value="Remale">Hospital Administrator</option>
-                            <option value="Remale">Inventory Manager</option>
-                            <option value="Remale">Imaging Technician</option>
-                            <option value="Remale">Lab Technician</option>
-                            <option value="Remale">Medical Records Officer</option>
-                            <option value="Remale">Nurse</option>
-                            <option value="Remale">Nurse Manger</option>
-                            <option value="Remale">Patient Administration</option>
-                            <option value="Remale">Pharmacist</option>
-                            <option value="Remale">Social Worker</option>
-                            <option value="Remale">System Administrator</option>
-                            <option value="Remale">User Administrator</option>
-                            <option value="Remale">Cashier</option>
-                        </select>
+                <!-- Administration -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="bg-success text-white text-center py-1">Administration</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="admin1">
+                        <label class="form-check-label" for="admin1">Administration</label>
                     </div>
-
-                    <!-- start of Administration -->
-                    <div class="mb-4">
-                        <h4 class="bg-success text-white text-center">Administration</h4>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Administration</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Update Configurations</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Define User Roles</label>
-                        </div>
-
-
-
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="admin2">
+                        <label class="form-check-label" for="admin2">Update Configurations</label>
                     </div>
-                    <!-- End of administartion -->
-
-
-                    <!-- start of Appointments -->
-                    <div class="mb-4">
-                        <h4 class="bg-success text-white text-center">Appointments</h4>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Appointments</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Appointments</label>
-                        </div>
-
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="admin3">
+                        <label class="form-check-label" for="admin3">Define User Roles</label>
                     </div>
-                    <!-- End of appointments -->
-
-
-
-                    <!-- start of Billing -->
-                    <div class="mb-4">
-                        <h4 class="bg-success text-white text-center">Billing</h4>
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Billing Diagnosis</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Charge</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Pricing</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Pricing Profile</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Invoice</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Payment</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Invoice</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Pricing</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Pricing Profile</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Invoice</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Payment</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Invoice</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Pricing</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Pricing Profile</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Edit Invoice</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Invoices</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Override Invoice</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Pricing</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Cashier</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">List Paid invoice</label>
-                        </div>
-
-                    </div>
-                    <!-- End of  Biling-->
-
-
-                    <!-- start of Patients -->
-                    <div class="mb-4">
-                        <h4 class="bg-success text-white text-center">Patients</h4>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Patients</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Allergy</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Notes</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Diagnosis</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Operative Plan</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Operative Report</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Photo</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Patient</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Procedure</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Social Work</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Visit</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Vitals</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Admit Patient</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Note</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Photo</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Patient</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Appointment</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Diagnosis</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Procedure</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Social Work</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Vitals</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Visit</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Discharge Patients</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Patient Reports</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Visits</label>
-                        </div>
-
-                    </div>
-                    <!-- End of  Patients-->
-
-                    <!-- start of Medication -->
-                    <div class="mb-4">
-                        <h4 class="bg-success text-white text-center">Medication</h4>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Medication</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Medication</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Medication</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Fulfill Medication</label>
-                        </div>
-
-                    </div>
-                    <!-- End of  Medication-->
-
-
-                    <!-- start of  Lab-->
-                    <div class="mb-4">
-                        <h4 class="bg-success text-white text-center">Lab</h4>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Labs</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Lab</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Complete Lab</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Lab</label>
-                        </div>
-
-                    </div>
-                    <!-- End of Labs -->
-
-                    <!-- start of  Imaging-->
-                    <div class="mb-4">
-                        <h4 class="bg-success text-white text-center">Imaging</h4>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Imaging</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Imaging</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Complete Imaging</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Imaging</label>
-                        </div>
-
-                    </div>
-                    <!-- End of  Imaging-->
-
-                    <!-- start of Inventory -->
-                    <div class="mb-4">
-                        <h4 class="bg-success text-white text-center">Inventory</h4>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Inventory</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Inventory Request</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for=""> Add Inventory Item</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Add Inventory Purchase</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Adjust Inventory Location</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Delete Inventory Item</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox">
-                            <label for="">Fulfill Inventory</label>
-                        </div>
-
-                    </div>
-                    <!-- End of  Inventory-->
-
                 </div>
-            </form>
-            <!-- end of form -->
 
-            <div class="container">
-                <a class="btn btn-success mx-1" href="">UPDATE</a>
+                <!-- Appointments -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="bg-success text-white text-center py-1">Appointments</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="app1">
+                        <label class="form-check-label" for="app1">Appointments</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="app2">
+                        <label class="form-check-label" for="app2">Add Appointments</label>
+                    </div>
+                </div>
+
+                <!-- Billing -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="bg-success text-white text-center py-1">Billing</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="bill1">
+                        <label class="form-check-label" for="bill1">Add Billing Diagnosis</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="bill2">
+                        <label class="form-check-label" for="bill2">Add Charge</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="bill3">
+                        <label class="form-check-label" for="bill3">Add Pricing</label>
+                    </div>
+                    <!-- Add additional Billing checkboxes here following same structure -->
+                </div>
+
+                <!-- Patients -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="bg-success text-white text-center py-1">Patients</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="pat1">
+                        <label class="form-check-label" for="pat1">Patients</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="pat2">
+                        <label class="form-check-label" for="pat2">Add Allergy</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="pat3">
+                        <label class="form-check-label" for="pat3">Add Notes</label>
+                    </div>
+                    <!-- Add remaining Patient checkboxes here -->
+                </div>
+
+                <!-- Medication -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="bg-success text-white text-center py-1">Medication</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="med1">
+                        <label class="form-check-label" for="med1">Medication</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="med2">
+                        <label class="form-check-label" for="med2">Add Medication</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="med3">
+                        <label class="form-check-label" for="med3">Delete Medication</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="med4">
+                        <label class="form-check-label" for="med4">Fulfill Medication</label>
+                    </div>
+                </div>
+
+                <!-- Lab -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="bg-success text-white text-center py-1">Lab</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="lab1">
+                        <label class="form-check-label" for="lab1">Labs</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="lab2">
+                        <label class="form-check-label" for="lab2">Add Lab</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="lab3">
+                        <label class="form-check-label" for="lab3">Complete Lab</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="lab4">
+                        <label class="form-check-label" for="lab4">Delete Lab</label>
+                    </div>
+                </div>
+
+                <!-- Imaging -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="bg-success text-white text-center py-1">Imaging</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="img1">
+                        <label class="form-check-label" for="img1">Imaging</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="img2">
+                        <label class="form-check-label" for="img2">Add Imaging</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="img3">
+                        <label class="form-check-label" for="img3">Complete Imaging</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="img4">
+                        <label class="form-check-label" for="img4">Delete Imaging</label>
+                    </div>
+                </div>
+
+                <!-- Inventory -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="bg-success text-white text-center py-1">Inventory</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="inv1">
+                        <label class="form-check-label" for="inv1">Inventory</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="inv2">
+                        <label class="form-check-label" for="inv2">Add Inventory Request</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="inv3">
+                        <label class="form-check-label" for="inv3">Add Inventory Item</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="inv4">
+                        <label class="form-check-label" for="inv4">Add Inventory Purchase</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="inv5">
+                        <label class="form-check-label" for="inv5">Adjust Inventory Location</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="inv6">
+                        <label class="form-check-label" for="inv6">Delete Inventory Item</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="inv7">
+                        <label class="form-check-label" for="inv7">Fulfill Inventory</label>
+                    </div>
+                </div>
+
             </div>
 
+            <div class="pt-3">
+                <a class="btn btn-success" href="">UPDATE</a>
+            </div>
 
-
-        </div>
-        <!-- end of content area -->
-
-        <!-- </div> -->
+        </form>
+        <!-- end of form -->
 
     </div>
-    <!-- end of userrole6 page -->
+    <!-- end of main content -->
 
+
+
+
+
+    <!-- Mobile overlay, that causes shadow effect on the main content area in small screen -->
+    <div class="overlay" id="overlay"></div>
 
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
     <!-- script line for dropdown arrow in navabar. it controls the modal effect as well -->
+
+    <!-- script for handling desktop menu -->
+    <script>
+        const toggleBtn = document.getElementById('mobile-toggle');
+        const closeBtn = document.getElementById('sidebar-close');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.add('show');
+            overlay.classList.add('show');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+    </script>
+
+
+
+
+
 </body>
 
 </html>
